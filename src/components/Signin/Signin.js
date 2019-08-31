@@ -46,7 +46,7 @@ class Signin extends React.Component {
                             type="password" 
                             name="password"  
                             id="password"
-                            onChange={}
+                            onChange={this.onPasswordChange}
                         />
                         </div>
                     </fieldset>
