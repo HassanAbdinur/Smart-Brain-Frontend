@@ -56,10 +56,6 @@ class App extends Component {
     }})
   }
 
-  displayFaceBox = (box) => {
-    this.setState({box: box});
-  }
-
 
   calculateFaceLocation = (data) => {
     const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
@@ -72,6 +68,10 @@ class App extends Component {
       rightCol: width - (clarifaiFace.right_col * width),
       bottomRow: height - (clarifaiFace.bottom_row * height)
     }
+  }
+
+  displayFaceBox = (box) => {
+    this.setState({box: box});
   }
 
   onInputChange = (event) => {
