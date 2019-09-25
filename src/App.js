@@ -107,7 +107,6 @@ class App extends Component {
   onRouteChange = (route) => {
     if (route === 'signout') {
       this.setState(initialState)
-      // route='signin'
     } else if (route === 'home') {
       this.setState({isSignedIn: true})
     }
